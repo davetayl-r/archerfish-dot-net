@@ -21,21 +21,21 @@ pip freeze > requirements.txt    # update after adding packages
 ### Scrape the live site
 
 ```bash
-wget \
-  --mirror \
-  --convert-links \
-  --adjust-extension \
-  --page-requisites \
-  --no-parent \
-  --directory-prefix=./squarespace-mirror \
-  https://www.archerfish.net/
+source .venv/bin/activate
+python scripts/scrape.py         # crawls archerfish.net → squarespace-mirror/
+```
+
+### Clean and restructure
+
+```bash
+source .venv/bin/activate
+python scripts/clean.py          # strips Squarespace cruft → site/
 ```
 
 ### Serve locally
 
 ```bash
-source .venv/bin/activate
-python3 -m http.server 8000      # open http://localhost:8000
+cd site && python3 -m http.server 8000   # open http://localhost:8000
 ```
 
 ### Check for broken links
@@ -53,34 +53,70 @@ R -e "renv::snapshot()"  # update renv.lock after adding packages
 
 ## Architecture
 
-The final output is a plain static site (no build step, no framework). Structure:
+Two-stage pipeline: scrape → clean. No build step, no framework.
 
 ```
-/
+scripts/
+├── scrape.py          # crawls archerfish.net, saves raw mirror to squarespace-mirror/
+└── clean.py           # strips Squarespace cruft, localises assets, outputs to site/
+
+squarespace-mirror/    # raw scrape output (not deployed)
+├── www.archerfish.net/
+│   └── [pages as index.html files]
+└── images.squarespace-cdn.com/
+    └── [content images]
+
+site/                  # clean static site (deploy this)
 ├── index.html
-├── about/index.html
-├── [other pages]/index.html
+├── analysis/index.html
+├── insights/index.html
+├── insights/[article-slug]/index.html
 ├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── CNAME                        ← contains "www.archerfish.net"
+│   ├── css/site.css
+│   └── images/        (42 images, all local)
+└── CNAME              ← "www.archerfish.net"
 ```
 
-The scrape lands in `./squarespace-mirror/` and is cleaned/restructured into the root before deployment. The site must work from `file://` (no server dependency).
+### scrape.py
 
-## Migration workflow
+- Crawls `https://www.archerfish.net/` and all internal links
+- Downloads HTML pages, CSS, JS, images (including `data-src` lazy-load attributes)
+- Skips generic Squarespace platform assets (`/universal/`, `/website-component-definition/` paths)
+- Hashes path components exceeding macOS's 255-byte filename limit
+- Output goes to `squarespace-mirror/` organised by host
 
-1. **Scrape** → `squarespace-mirror/` via wget
-2. **Audit** — strip Squarespace scripts, CDN refs, cookie banners, proprietary meta tags; replace any Squarespace-CDN fonts with Google Fonts or self-hosted equivalents
-3. **Restructure** — move files into the target layout above; consolidate CSS; make all links relative
-4. **Test** — local server + spider check + manual visual review (pages, images, nav, fonts, mobile)
-5. **Deploy** — push to `main`, enable GitHub Pages, add `CNAME`, enforce HTTPS
+### clean.py
+
+- Removes all Squarespace/Typekit/GTM scripts (including protocol-relative `//` URLs)
+- Removes Squarespace `<link>` tags: preconnect, stylesheets, favicon, RSS alternate, image_src
+- Removes Squarespace comment widgets and social sharing buttons
+- Removes JSON-LD blobs containing Squarespace URLs
+- Strips residual Squarespace `data-*` attributes
+- Replaces Typekit with Google Fonts: **Montserrat** (was Proxima Nova) and **EB Garamond** (was Adobe Garamond Pro)
+- Rewrites all CDN image URLs to local `assets/images/` paths
+- Promotes lazy-load `data-src` → `src`, removes `srcset` (CDN-dependent)
+- Rewrites site CSS link to `assets/css/site.css`
+- In the CSS: substitutes font-family names and removes `@font-face` for `squarespace-ui-font`
+
+## Pages (7 total)
+
+- `/` — Homepage
+- `/analysis` — Analysis services page
+- `/insights` — Blog index
+- `/insights/why-social-return-on-investment-should-be-avoided`
+- `/insights/how-can-cba-prioritise-social-policy-spending`
+- `/insights/where-can-we-remember-them`
+- `/insights/what-can-we-learn-from-baseball`
+
+## Remaining work
+
+- Phase 4: Visual review at `http://localhost:8000` — check layout, images, fonts, mobile
+- Phase 5: Replace Squarespace JS galleries with vanilla JS (slideshow on homepage is currently static)
+- Phase 5: Add Formspree contact form (Squarespace form backend is gone)
+- Phase 6: Git init, push to `dtay0016/archerfish-dot-net`, enable GitHub Pages, enforce HTTPS
 
 ## Key constraints
 
-- Replace any Squarespace JS (galleries, forms) with vanilla JS equivalents
-- Contact forms → Formspree (https://formspree.io); Squarespace backend won't work statically
-- No Squarespace licence keys, API tokens, or proprietary platform code in output
 - Faithfulness to the original design is the priority (layout, typography, spacing, colours)
-- If a page fails to scrape, fetch manually with `curl` and reconstruct
+- Contact forms → Formspree (https://formspree.io)
+- No Squarespace licence keys, API tokens, or proprietary platform code in output
