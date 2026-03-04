@@ -1,0 +1,347 @@
+// ─── Archerfish brand overrides ────────────────────────────────────────────
+// Applied after all theme component imports so these always win.
+// Colours: $primary = #000 (black), $orange = #e2801d (accent)
+// Fonts:   Montserrat (headings/UI), EB Garamond (body)
+
+$orange: #e2801d;
+
+// ── Header ─────────────────────────────────────────────────────────────────
+// Dark header on all pages — matches archerfish.net nav feel
+.header {
+  background-color: #111111;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  // When positioned absolute (homepage) keep same dark treatment
+  &.header-absolute {
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(4px);
+  }
+}
+
+// ── Navigation ─────────────────────────────────────────────────────────────
+.main-menu > ul > li {
+  > a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $orange;
+      color: #ffffff;
+    }
+  }
+
+  &.active > a {
+    background: $orange;
+    color: #ffffff;
+
+    &:hover {
+      background: darken($orange, 8%);
+    }
+  }
+}
+
+// Mobile menu link colours
+.main-menu-mobile {
+  background: #111111;
+
+  ul li a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+// Hamburger bars → white on dark header
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #ffffff !important;
+}
+
+// ── Buttons ────────────────────────────────────────────────────────────────
+.button {
+  background: #000000;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 10px 22px;
+
+  &:hover {
+    background: $orange;
+    color: #ffffff;
+  }
+}
+
+.button-white {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+
+  &:hover {
+    background: $orange;
+    border-color: $orange;
+    color: #ffffff;
+  }
+}
+
+// ── Hero image ─────────────────────────────────────────────────────────────
+// Replace blue overlay with dark/black overlay
+.hero-image {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    @include media-breakpoint-up(md) {
+      font-size: 3.4rem;
+    }
+  }
+}
+
+// ── Section strips ─────────────────────────────────────────────────────────
+// Homepage content strips — dark primary strip
+.strip.bg-primary,
+.strip-primary {
+  background-color: #111111 !important;
+}
+
+.bg-overlay {
+  // darken bg-overlay strips (used on homepage sections)
+  &::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+// ── Typography ─────────────────────────────────────────────────────────────
+h1, h2 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  color: #111111;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: $orange;   // orange accent instead of blue
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #111111;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  color: #333333;
+  line-height: 1.8;
+}
+
+// Body-level font so all inherited text uses EB Garamond
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+// Links → orange
+a {
+  color: $orange;
+
+  &:hover {
+    color: darken($orange, 10%);
+  }
+}
+
+// ── Footer ─────────────────────────────────────────────────────────────────
+.footer {
+  background: #111111;
+
+  .footer-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  ul li,
+  ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.sub-footer {
+  background: #000000;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+
+  a {
+    color: rgba(255, 255, 255, 0.4);
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+// ── Overlay strips — all text white ────────────────────────────────────────
+// Any .strip with bg-overlay or bg-primary has a dark/image background
+.strip.bg-overlay,
+.strip.bg-primary,
+.strip-primary {
+  h1, h2, h3, h4, h5, h6, p, li, strong, em {
+    color: #ffffff !important;
+  }
+
+  a.button {
+    color: #ffffff;
+  }
+
+  // Orange headings don't apply inside dark strips
+  h3 {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+}
+
+// ── Intro bar (used on contact page, blog list) ─────────────────────────────
+.intro {
+  background: #111111;
+  padding: 60px 0 40px;
+
+  h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+}
+
+// ── Content pages (Analysis, blog posts) ───────────────────────────────────
+.page-default-single,
+.content {
+  h2 { margin-top: 2.5rem; margin-bottom: 0.8rem; }
+  h3 { margin-top: 2rem; }
+  h4 { margin-top: 1.5rem; }
+
+  // Blog post body
+  p + p { margin-top: 0; }
+}
+
+// ── Contact form ────────────────────────────────────────────────────────────
+.contact-form {
+  margin-top: 2rem;
+
+  label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1rem;
+    color: #333;
+    background: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #000000;
+    }
+  }
+
+  textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  button[type="submit"] {
+    @extend .button;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+}
+
+// ── Blog list ───────────────────────────────────────────────────────────────
+// Post summary cards
+.summary h2 a,
+.summary h3 a {
+  color: #111111;
+  font-family: 'Montserrat', sans-serif;
+
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+// ── Sub-footer — ABN / copyright ────────────────────────────────────────────
+.sub-footer {
+  background: #000000;
+
+  ul li {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+
+    a {
+      color: rgba(255, 255, 255, 0.4);
+      &:hover { color: $orange; }
+    }
+
+    strong { color: rgba(255, 255, 255, 0.7); }
+  }
+}

@@ -3,6 +3,7 @@ title: 'Why should Social Return on Investment be avoided at all costs?'
 date: 2016-01-01
 heroHeading: 'Why should Social Return on Investment be avoided at all costs?'
 heroBackground: 'images/1440657960812-8RAS0NJBK10CRSGBVIZT_image-asset.jpeg'
+slug: why-social-return-on-investment-should-be-avoided
 draft: false
 ---
 

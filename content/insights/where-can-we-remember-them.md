@@ -3,6 +3,7 @@ title: 'Where can we remember them?'
 date: 2015-11-11
 heroHeading: 'Where can we remember them?'
 heroBackground: 'images/1447156360860-7ITGI1TUHFV4WCCIW5OU_image-asset.jpeg'
+slug: where-can-we-remember-them
 draft: false
 ---
 

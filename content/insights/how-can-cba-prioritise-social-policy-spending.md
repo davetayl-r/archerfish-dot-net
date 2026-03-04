@@ -3,6 +3,7 @@ title: 'How can cost-benefit analysis be used to prioritise social policy spendi
 date: 2015-09-01
 heroHeading: 'How can cost-benefit analysis be used to prioritise social policy spending?'
 heroBackground: 'images/1439450646484-BM5ZFD5M7D1VRYLDVRXD_image-asset.jpeg'
+slug: how-can-cba-prioritise-social-policy-spending
 draft: false
 ---
 

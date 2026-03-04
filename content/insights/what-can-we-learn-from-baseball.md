@@ -3,6 +3,7 @@ title: 'What can we learn from Baseball?'
 date: 2014-06-17
 heroHeading: 'What can we learn from Baseball?'
 heroBackground: 'images/NYC-1.jpg'
+slug: what-can-we-learn-from-baseball
 draft: false
 ---
 
