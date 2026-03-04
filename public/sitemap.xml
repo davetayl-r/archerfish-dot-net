@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:57939/analysis/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/pages/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/insights/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/insights/why-social-return-on-investment-should-be-avoided/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/insights/where-can-we-remember-them/</loc>
+    <lastmod>2015-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/insights/how-can-cba-prioritise-social-policy-spending/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/insights/what-can-we-learn-from-baseball/</loc>
+    <lastmod>2014-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:57939/categories/</loc>
+  </url><url>
+    <loc>http://localhost:57939/contact/</loc>
+  </url><url>
+    <loc>http://localhost:57939/tags/</loc>
+  </url>
+</urlset>

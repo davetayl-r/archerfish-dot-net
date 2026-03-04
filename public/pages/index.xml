@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Archerfish</title>
+    <link>http://localhost:57939/pages/</link>
+    <description>Recent content in Pages on Archerfish</description>
+    <generator>Hugo</generator>
+    <language>en-au</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57939/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis</title>
+      <link>http://localhost:57939/analysis/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/analysis/</guid>
+      <description>&lt;div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;strip bg-cover bg-position-center bg-overlay pt-15 pb-15&#34; style=&#34;background-image: url(&#39; /images/archerfishApproach.jpg &#39;);&#34;&gt;&#xA;  &lt;div class=&#34;container&#34;&gt;&#xA;    &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col-12 col-md-6&#34;&gt;&#xA;          &lt;p&gt;We have built a detailed cost-benefit model based on an approach developed by the &lt;a href=&#34;http://www.wsipp.wa.gov/&#34;&gt;Washington State Institute for Public Policy&lt;/a&gt;. This involves building sectoral models of service provision to connect the often separate pillars that make up service delivery.&lt;/p&gt;&#xA;&lt;p&gt;Our detailed Australian state-level cost-benefit model provides an accurate estimation of the potential monetised benefits and costs of evaluated policies and programs. Our modelling can be used by public sector agencies and non-government organisations at different levels of government to support funding applications for new, significant, or continuing policy initiatives.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

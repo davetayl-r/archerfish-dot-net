@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Archerfish</title>
+    <link>http://localhost:57939/</link>
+    <description>Recent content in Home on Archerfish</description>
+    <generator>Hugo</generator>
+    <language>en-au</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57939/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis</title>
+      <link>http://localhost:57939/analysis/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/analysis/</guid>
+      <description>&lt;div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;strip bg-cover bg-position-center bg-overlay pt-15 pb-15&#34; style=&#34;background-image: url(&#39; /images/archerfishApproach.jpg &#39;);&#34;&gt;&#xA;  &lt;div class=&#34;container&#34;&gt;&#xA;    &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col-12 col-md-6&#34;&gt;&#xA;          &lt;p&gt;We have built a detailed cost-benefit model based on an approach developed by the &lt;a href=&#34;http://www.wsipp.wa.gov/&#34;&gt;Washington State Institute for Public Policy&lt;/a&gt;. This involves building sectoral models of service provision to connect the often separate pillars that make up service delivery.&lt;/p&gt;&#xA;&lt;p&gt;Our detailed Australian state-level cost-benefit model provides an accurate estimation of the potential monetised benefits and costs of evaluated policies and programs. Our modelling can be used by public sector agencies and non-government organisations at different levels of government to support funding applications for new, significant, or continuing policy initiatives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why should Social Return on Investment be avoided at all costs?</title>
+      <link>http://localhost:57939/insights/why-social-return-on-investment-should-be-avoided/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/insights/why-social-return-on-investment-should-be-avoided/</guid>
+      <description>&lt;p&gt;Not-for-profit (NFP) organisations are often both innovative in the way they deliver services and responsive to the needs of clients. As a result they are increasingly providing social services that were previously the domain of the public sector.&lt;/p&gt;&#xA;&lt;p&gt;Coupled with the rise of social impact investing and the competition of ideas that it creates, NFPs are being asked by funders — both government and philanthropic — to demonstrate the economic value they generate.  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where can we remember them?</title>
+      <link>http://localhost:57939/insights/where-can-we-remember-them/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/insights/where-can-we-remember-them/</guid>
+      <description>&lt;p&gt;Ninety-seven years ago to the day, after more than four years of continuous fighting, the guns of the Western Front fell silent and an armistice was signed. In the years following the end of the First World War the moment when hostilities ended has become synonymous with the remembrance of those who died in the world wars.&lt;/p&gt;&#xA;&lt;p&gt;To commemorate Remembrance Day this year we’ve used data from the &lt;a href=&#34;http://www.cwgc.org/&#34;&gt;Commonwealth War Graves Commission&lt;/a&gt; (CWGC) to plot the location of cemeteries and memorials to Commonwealth soldiers who died whilst on active service during the First and Second World Wars. These soldiers served and died in places far from home, from Gallipoli to Nigeria.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How can cost-benefit analysis be used to prioritise social policy spending?</title>
+      <link>http://localhost:57939/insights/how-can-cba-prioritise-social-policy-spending/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/insights/how-can-cba-prioritise-social-policy-spending/</guid>
+      <description>&lt;p&gt;Before economists came along and formalised the concept, people had long tried to weigh up the costs and benefits of pursuing different choices. The American polymath Benjamin Franklin was one of the first to document this in a letter to a friend:&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;“When difficult cases occur, they are difficult chiefly because while we have them under consideration, all the reasons pro and con are not present to the mind at the same time. To get over this, my way is to divide half a sheet of paper by a line into two columns; writing over the one ‘Pro’, and the other ‘Con’.”&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What can we learn from Baseball?</title>
+      <link>http://localhost:57939/insights/what-can-we-learn-from-baseball/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57939/insights/what-can-we-learn-from-baseball/</guid>
+      <description>&lt;p&gt;**This article was originally published by &lt;a href=&#34;https://newmatilda.com/2014/06/17/economic-lessons-billy-beane%E2%80%99s-baseball&#34;&gt;New Matilda&lt;/a&gt;. **&lt;/p&gt;&#xA;&lt;p&gt;Successful businesses generally don’t drop millions of dollars on a new idea without assessing if its likely to be a good investment or not. It would be fair to say that most Australian’s assume our government operates in much the same manner when divvying up the budget. In reality, spending decisions are mostly based on a combination of good intentions, ideology, horse trading, gut instinct and inertia.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
