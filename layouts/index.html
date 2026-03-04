@@ -36,6 +36,7 @@
   {{ $imgLeft := eq (mod $stripIdx 2) 0 }}
   <div class="home-strip{{ if not $imgLeft }} home-strip-alt{{ end }}">
     <div class="container-fluid px-0">
+      {{ if .Params.background }}
       <div class="row g-0 align-items-stretch{{ if not $imgLeft }} flex-md-row-reverse{{ end }}">
         <div class="col-12 col-md-6 home-strip-image" style="background-image: url('{{ .Params.background | relURL }}');"></div>
         <div class="col-12 col-md-6 home-strip-content">
@@ -46,6 +47,15 @@
           {{ end }}
         </div>
       </div>
+      {{ else }}
+      <div class="home-strip-content home-strip-centered">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+        {{ if .Params.button }}
+        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </div>
   {{ $stripIdx = add $stripIdx 1 }}

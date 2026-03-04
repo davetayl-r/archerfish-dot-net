@@ -1,7 +1,7 @@
 ---
 title: 'Who are we?'
 weight: 10
-background: 'images/Website-1.jpg'
+#background: 'images/Website-1.jpg'
 button: 'Our Analysis'
 buttonLink: 'analysis'
 ---

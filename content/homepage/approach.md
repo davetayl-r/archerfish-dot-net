@@ -1,7 +1,7 @@
 ---
 title: 'How do we do it?'
 weight: 30
-background: 'images/Website-2.jpg'
+#background: 'images/Website-2.jpg'
 button: 'Read our Insights'
 buttonLink: 'insights'
 ---
@@ -11,3 +11,9 @@ We have used our expertise in behavioural economics, experimental psychology, da
 Our detailed Australian state-level cost-benefit model is able to provide an accurate estimation of the potential monetised benefits and costs of evaluated policies and programs.
 
 Our modelling can be used by public sector agencies and non-government organisations at different levels of government to support funding applications for new, significant, or continuing, policy initiatives.
+
+### Our approach
+
+Our approach to evidence-led cost benefit analysis is based on the following methodology. 
+
+![](/images/archerfishApproach.jpg)

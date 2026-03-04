@@ -490,4 +490,14 @@ a {
     align-self: flex-start;
     margin-top: 1.5rem;
   }
+
+  &.home-strip-centered {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+
+    .button {
+      align-self: flex-start;
+    }
+  }
 }

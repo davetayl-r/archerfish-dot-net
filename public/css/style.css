@@ -13028,14 +13028,37 @@ html {
   background-color: #eee;
   margin: 0 0 1em; }
 
-.header {
+.header,
+.header.header-absolute {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
   background-color: #111111;
   box-shadow: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   height: 80px; }
-  .header.header-absolute {
+  .header .logo,
+  .header.header-absolute .logo {
+    width: auto; }
+    .header .logo img,
+    .header.header-absolute .logo img {
+      width: auto;
+      height: 44px; }
+  .header .logo-mobile,
+  .header.header-absolute .logo-mobile {
+    width: auto; }
+    .header .logo-mobile img,
+    .header.header-absolute .logo-mobile img {
+      width: auto;
+      height: 34px; }
+  .header.header-absolute,
+  .header.header-absolute.header-absolute {
     background-color: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(4px); }
+
+body:not(.page-home) #wrapper {
+  padding-top: 80px; }
 
 .main-menu > ul > li > a {
   color: #ffffff;
@@ -13094,19 +13117,38 @@ html {
 .hero-image {
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: multiply; }
+  .hero-image .container {
+    align-items: center; }
+  .hero-image .hero-text {
+    text-align: center;
+    width: 100%; }
   .hero-image .hero-text h1, .hero-image .hero-text .h1,
   .hero-image .hero-text h2,
   .hero-image .hero-text .h2,
   .hero-image .hero-text p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.04em; }
+    color: #ffffff;
+    width: 100%; }
   .hero-image .hero-text h1, .hero-image .hero-text .h1 {
-    font-size: 2.6rem;
-    font-weight: 300; }
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.88);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.01em;
+    margin-bottom: 0.5rem; }
+  .hero-image .hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    line-height: 1.15; }
     @media (min-width: 768px) {
-      .hero-image .hero-text h1, .hero-image .hero-text .h1 {
-        font-size: 3.4rem; } }
+      .hero-image .hero-text p {
+        font-size: 3.8rem; } }
 .strip.bg-primary,
 .strip-primary {
   background-color: #111111 !important; }
@@ -13315,6 +13357,30 @@ a {
     .sub-footer ul li strong {
       color: rgba(255, 255, 255, 0.7); }
 
+.home-interstitial {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  padding: 30rem 0; }
+  .home-interstitial .home-interstitial-subtitle {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4; }
+  .home-interstitial h2, .home-interstitial .h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
+    @media (min-width: 768px) {
+      .home-interstitial h2, .home-interstitial .h2 {
+        font-size: 3rem; } }
 .home-strip {
   background: #ffffff; }
   .home-strip.home-strip-alt {
@@ -13327,6 +13393,11 @@ a {
   @media (min-width: 768px) {
     .home-strip-image {
       min-height: 500px; } }
+.home-strip-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5rem; }
+
 .home-strip-content {
   display: flex;
   flex-direction: column;
@@ -13350,5 +13421,11 @@ a {
   .home-strip-content .button, .home-strip-content .contact-form button[type="submit"], .contact-form .home-strip-content button[type="submit"] {
     align-self: flex-start;
     margin-top: 1.5rem; }
+  .home-strip-content.home-strip-centered {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; }
+    .home-strip-content.home-strip-centered .button, .home-strip-content.home-strip-centered .contact-form button[type="submit"], .contact-form .home-strip-content.home-strip-centered button[type="submit"] {
+      align-self: flex-start; }
 
 /*# sourceMappingURL=style.css.map */
