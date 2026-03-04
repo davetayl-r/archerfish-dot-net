@@ -1,0 +1,43 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
+
+{{ $headless := .Site.GetPage "/homepage" }}
+{{ $reusablePages := $headless.Resources.ByType "page" }}
+{{ $reusablePages := sort $reusablePages ".Params.weight" }}
+{{ range $i, $page := $reusablePages }}
+{{ $imgLeft := eq (mod $i 2) 0 }}
+<div class="home-strip{{ if not $imgLeft }} home-strip-alt{{ end }}">
+  <div class="container-fluid px-0">
+    <div class="row g-0 align-items-stretch{{ if not $imgLeft }} flex-md-row-reverse{{ end }}">
+      <div class="col-12 col-md-6 home-strip-image" style="background-image: url('{{ $page.Params.background | relURL }}');"></div>
+      <div class="col-12 col-md-6 home-strip-content">
+        <h2>{{ $page.Title }}</h2>
+        {{ $page.Content }}
+        {{ if $page.Params.button }}
+        <a class="button" href="{{ $page.Params.buttonLink | relURL }}">{{ $page.Params.button }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

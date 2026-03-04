@@ -1,11 +1,13 @@
 ---
-title: 'We help our clients to think like investors'
-weight: 2
+title: 'What can we do for you?'
+weight: 3
 background: 'images/Website-3.jpg'
-button: 'Read our Insights'
-buttonLink: 'insights'
+button: 'Get in Touch'
+buttonLink: 'contact'
 ---
 
-We tie reliable evidence and economic reasoning together to answer the question: *which policies meet their design requirements and provide value for money?*
+- We assist service providers to explore the use of linked and administrative data to determine the impact of their policies or interventions.
+- We build robust business cases for recurrent and extended investment. Our approach determines the return on investment and relative riskiness for each policy or intervention.
+- We help you make better decisions. We have a comprehensive understanding of the pragmatics of service delivery and the quantitative skills to focus policy and budgetary objectives.
 
-We use decision tools like cost-benefit analysis to help our clients determine which policies and interventions have credibly measurable rates of return.
+We seek to provide decision makers with the tools to invest their budgets wisely in programs and policies that deliver a positive return on investment.
