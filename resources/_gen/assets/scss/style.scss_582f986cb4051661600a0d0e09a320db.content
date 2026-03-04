@@ -13031,7 +13031,8 @@ html {
 .header {
   background-color: #111111;
   box-shadow: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 80px; }
   .header.header-absolute {
     background-color: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(4px); }
@@ -13313,5 +13314,41 @@ a {
         color: #e2801d; }
     .sub-footer ul li strong {
       color: rgba(255, 255, 255, 0.7); }
+
+.home-strip {
+  background: #ffffff; }
+  .home-strip.home-strip-alt {
+    background: #f5f5f5; }
+
+.home-strip-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+  @media (min-width: 768px) {
+    .home-strip-image {
+      min-height: 500px; } }
+.home-strip-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem 2.5rem; }
+  @media (min-width: 768px) {
+    .home-strip-content {
+      padding: 4rem 4rem; } }
+  .home-strip-content h2, .home-strip-content .h2 {
+    color: #111111;
+    margin-bottom: 1.2rem; }
+  .home-strip-content p {
+    color: #444444; }
+  .home-strip-content ul {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.1rem;
+    color: #444444;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem; }
+  .home-strip-content .button, .home-strip-content .contact-form button[type="submit"], .contact-form .home-strip-content button[type="submit"] {
+    align-self: flex-start;
+    margin-top: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
