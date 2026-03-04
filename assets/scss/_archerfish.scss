@@ -7,7 +7,12 @@ $orange: #e2801d;
 
 // ── Header ─────────────────────────────────────────────────────────────────
 // Dark header on all pages — matches archerfish.net nav feel
-.header {
+.header,
+.header.header-absolute {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
   background-color: #111111;
   box-shadow: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -35,6 +40,11 @@ $orange: #e2801d;
     background-color: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(4px);
   }
+}
+
+// Inner pages: offset content below the fixed header
+body:not(.page-home) #wrapper {
+  padding-top: 80px;
 }
 
 // ── Navigation ─────────────────────────────────────────────────────────────
