@@ -1,0 +1,48 @@
+baseURL = "https://www.archerfish.net/"
+languageCode = "en-au"
+title = "Archerfish"
+theme = "hugo-hero-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[params]
+  [params.logo]
+    mobile         = "images/B-W+MAIN+Archerfish_WEBSITE_03.png"
+    mobile_height  = "40px"
+    mobile_width   = "auto"
+    desktop        = "images/B-W+MAIN+Archerfish_WEBSITE_03.png"
+    desktop_height = "50px"
+    desktop_width  = "auto"
+    alt            = "Archerfish"
+
+  [params.homepage_meta_tags]
+    meta_description = "Archerfish is an economic advisory firm that specialises in collecting and analysing data to determine the economic impact of evidence-based interventions in health, education, social welfare, criminal justice, social services and housing."
+    meta_og_title    = "Archerfish"
+    meta_og_type     = "website"
+    meta_og_url      = "https://www.archerfish.net"
+    meta_og_description = "Archerfish is an economic advisory firm specialising in the economic impact of evidence-based interventions."
+
+[[menu.main]]
+  name   = "Analysis"
+  url    = "/analysis/"
+  weight = 1
+
+[[menu.main]]
+  name   = "Insights"
+  url    = "/insights/"
+  weight = 2
+
+[[menu.main]]
+  name   = "Contact"
+  url    = "/contact/"
+  weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[permalinks]
+  insights = "/insights/:slug/"
+  pages    = "/:contentbasename/"
