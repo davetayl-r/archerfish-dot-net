@@ -131,6 +131,11 @@ body:not(.page-home) #wrapper {
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: multiply;
 
+  // Force the flex column to centre its children horizontally
+  .container {
+    align-items: center;
+  }
+
   .hero-text {
     text-align: center;
     width: 100%;
@@ -143,6 +148,7 @@ body:not(.page-home) #wrapper {
     letter-spacing: 0.04em;
     color: #ffffff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    width: 100%;
   }
 
   .hero-text h1 {
