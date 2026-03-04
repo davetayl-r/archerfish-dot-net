@@ -19,22 +19,38 @@
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
-{{ range $i, $page := $reusablePages }}
-{{ $imgLeft := eq (mod $i 2) 0 }}
-<div class="home-strip{{ if not $imgLeft }} home-strip-alt{{ end }}">
-  <div class="container-fluid px-0">
-    <div class="row g-0 align-items-stretch{{ if not $imgLeft }} flex-md-row-reverse{{ end }}">
-      <div class="col-12 col-md-6 home-strip-image" style="background-image: url('{{ $page.Params.background | relURL }}');"></div>
-      <div class="col-12 col-md-6 home-strip-content">
-        <h2>{{ $page.Title }}</h2>
-        {{ $page.Content }}
-        {{ if $page.Params.button }}
-        <a class="button" href="{{ $page.Params.buttonLink | relURL }}">{{ $page.Params.button }}</a>
-        {{ end }}
+
+{{ $stripIdx := 0 }}
+{{ range $reusablePages }}
+  {{ if .Params.interstitial }}
+
+  <div class="home-interstitial" style="background-image: url('{{ .Params.background | relURL }}');">
+    <div class="container">
+      {{ if .Params.subtitle }}<p class="home-interstitial-subtitle">{{ .Params.subtitle }}</p>{{ end }}
+      <h2>{{ .Title }}</h2>
+    </div>
+  </div>
+
+  {{ else }}
+
+  {{ $imgLeft := eq (mod $stripIdx 2) 0 }}
+  <div class="home-strip{{ if not $imgLeft }} home-strip-alt{{ end }}">
+    <div class="container-fluid px-0">
+      <div class="row g-0 align-items-stretch{{ if not $imgLeft }} flex-md-row-reverse{{ end }}">
+        <div class="col-12 col-md-6 home-strip-image" style="background-image: url('{{ .Params.background | relURL }}');"></div>
+        <div class="col-12 col-md-6 home-strip-content">
+          <h2>{{ .Title }}</h2>
+          {{ .Content }}
+          {{ if .Params.button }}
+          <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
-</div>
+  {{ $stripIdx = add $stripIdx 1 }}
+
+  {{ end }}
 {{ end }}
 
 {{ end }}

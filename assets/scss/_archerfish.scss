@@ -393,6 +393,38 @@ a {
   }
 }
 
+// ── Homepage interstitial banners ────────────────────────────────────────────
+.home-interstitial {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  padding: 6rem 0;
+
+  .home-interstitial-subtitle {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+}
+
 // ── Homepage two-column strips ───────────────────────────────────────────────
 .home-strip {
   background: #ffffff;

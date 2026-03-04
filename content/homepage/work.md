@@ -1,6 +1,6 @@
 ---
 title: 'Who are we?'
-weight: 1
+weight: 10
 background: 'images/Website-1.jpg'
 button: 'Our Analysis'
 buttonLink: 'analysis'
@@ -14,8 +14,10 @@ We have specialised skills in clinical psychology, behavioural economics, health
 
 Our work informs social policy analysis from the point of view of decision‑makers who are balancing the best interests of those less advantaged than most and taxpayers who expect governments to invest wisely.
 
-### What do we do?
+## What do we do?
 
-- We help our clients to formulate and critique evidence-based policies and practices.
-- We tie reliable evidence and economic reasoning together to answer the question, 'Which policies meet their design requirements and provide value for the funders' money?'
-- We use decision tools like cost-benefit analysis, we provide advice to our clients on which policies and interventions have credibly measurable rates of return and which in turn, support budget submissions.
+We help our clients to formulate and critique evidence-based policies and practices.
+
+We tie reliable evidence and economic reasoning together to answer the question, 'Which policies meet their design requirements and provide value for the funders' money?'
+
+We use decision tools like cost-benefit analysis, we provide advice to our clients on which policies and interventions have credibly measurable rates of return and which in turn, support budget submissions.
