@@ -23,7 +23,7 @@ The app highlights campaigns and battles overlooked by history. We read into the
 
 Some historical quirks emerged from the data, we were particularly surprised to learn that the British Indian Army kept fighting following the Japanese surrender, as they were called into fight against pro-Independence Indonesian forces in the [Battle of Surabaya](https://en.wikipedia.org/wiki/Battle_of_Surabaya) during the Indonesian National Revolution.
 
-#### **On data limitations**
+### On data limitations
 
 The data for this app was sourced from the CWGC [casualty database](http://www.cwgc.org/find-war-dead.aspx) which records the names and place of commemoration of the over 1.7 million men and women who died serving in British Commonwealth forces during the First and Second World Wars.
 
@@ -43,12 +43,12 @@ With these limitations in mind, we hope you enjoy
 
 Lest we forget. 
 
-#### **Credits:**
+## Credits:
 
 **Produced by:** [Andrew Taylor](https://au.linkedin.com/in/andrewretaylor), [Dave Taylor](https://au.linkedin.com/in/djataylor) and [Louis Durant](https://au.linkedin.com/in/louisdurant).
 
 **Data source:** Commonwealth War Graves Commission
 
-**Platform: **For the technically minded our app was built using [R](https://www.r-project.org/) and [Shiny](http://shiny.rstudio.com/) using the [Leaflet](https://rstudio.github.io/leaflet/) and [Dygraphs](https://rstudio.github.io/dygraphs/) packages.
+**Platform:** For the technically minded our app was built using [R](https://www.r-project.org/) and [Shiny](http://shiny.rstudio.com/) using the [Leaflet](https://rstudio.github.io/leaflet/) and [Dygraphs](https://rstudio.github.io/dygraphs/) packages.
 
 If you have questions about our app or want report an error drop us a line at: [info@archerfish.net](mailto:info@archerfish.net) or flick us a tweet @archerfish.

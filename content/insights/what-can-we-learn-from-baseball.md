@@ -7,8 +7,6 @@ slug: what-can-we-learn-from-baseball
 draft: false
 ---
 
-**This article was originally published by [New Matilda](https://newmatilda.com/2014/06/17/economic-lessons-billy-beane%E2%80%99s-baseball). **
-
 Successful businesses generally don’t drop millions of dollars on a new idea without assessing if its likely to be a good investment or not. It would be fair to say that most Australian’s assume our government operates in much the same manner when divvying up the budget. In reality, spending decisions are mostly based on a combination of good intentions, ideology, horse trading, gut instinct and inertia.
 
 We are no wiser today about how well our government spends our tax dollars than we were twenty years ago. We know precious little about the impact of all but a tiny fraction of what our government spends to increase population health, reduce crime, improve social services and lessen indigenous disadvantage.
@@ -35,4 +33,7 @@ Every dollar spent on an ineffective program is a dollar that can’t be spent o
 
 In Australia, those in charge of our budget could learn a lot from Billy Beane’s approach to baseball. This period of belt tightening could be used as an opportunity to refocus our attention on what works to get better results. We need to be spending on the most effective and efficient ways to reduce inequity and disadvantage. We need to be playing *Moneyball*.  
 
-[Dave Taylor](http://www.flytheaspidistra.com) is an economist with Archerfish. You can follow him on Twitter [@davetayl_r](https://twitter.com/davetayl_r)
+**[Dave Taylor](http://www.davetaylor.au)** is an economist with Archerfish. You can follow him on Twitter [@davetayl_r](https://twitter.com/davetayl_r)
+
+**This article was originally published by [New Matilda](https://newmatilda.com/2014/06/17/economic-lessons-billy-beane%E2%80%99s-baseball).**
+

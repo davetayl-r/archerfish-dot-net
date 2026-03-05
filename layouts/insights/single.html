@@ -1,0 +1,33 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+{{ if .Params.heroBackground }}
+<div class="insights-hero" style="background-image: url('{{ .Params.heroBackground | relURL }}');">
+  <div class="container">
+    <p class="insights-hero-subtitle">{{ .Date.Format "2 January 2006" }}</p>
+    <h2>{{ .Title }}</h2>
+  </div>
+</div>
+{{ else }}
+<div class="insights-post-header">
+  <div class="container">
+    <p class="insights-item-date">{{ .Date.Format "2 January 2006" }}</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</div>
+{{ end }}
+
+<div class="container insights-post">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

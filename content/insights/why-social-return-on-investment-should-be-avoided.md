@@ -15,13 +15,13 @@ Instead of embracing established impact and economic evaluation tools, some [NF
 
 SROI is sometimes advanced as a legitimate addition to the portfolio of economic evaluation methods. It is not. It has been suggested in [some quarters](http://bit.ly/1NyrB5O) that SROI should be used in the public sector to assist in spending decisions. This would be a mistake.
 
-**WHAT IS SOCIAL RETURN ON INVESTMENT?**
+## What is Social Return on Investment
 
 [Described](http://bit.ly/1NyrxTA) by a practitioner as “a form of stakeholder-driven evaluation blended with cost-benefit analysis tailored to social purposes”. An SROI analysis rests on NFP’s stakeholders providing intuitive opinions on the impact of a program or intervention the organisation has run for its beneficiaries. An assessment of financial value is assigned to the changes stakeholders have identified by using a combination of stakeholder perceptions and reference values. 
 
 The liberal misappropriation of the language, but not the rigour, of mainstream economic evaluation lends SROI credibility among casual observers that it does not deserve.
 
-**HOW DOES IT WORK?**
+## How does it work?
 
 A SROI and a CBA share a common goal of seeking to monetise the impact of the benefits of an intervention and compare them with the costs of implementing it. However the method by which either benefits are attributed and monetised and costs are assigned in an SROI has no comparison to that of a [rigorous cost-benefit analysis](http://www.archerfish.net/insights/how-can-cba-prioritise-social-policy-spending). 
 
@@ -33,7 +33,7 @@ In some instances SROI practitioners may attempt to moderate some of the estimat
 
 From experience in psychological and economic theory, we know that this sort of introspection is subject to biases, especially optimism bias, wish-fulfilment and the failure of counterfactual reasoning.
 
-**WHAT’S WRONG WITH THIS?**
+## What's wrong with this?
 
 The purpose of economic evaluation is to enable decision makers to make the best use of funds by allocating resources — which may be time, effort or money — to the alternatives that generate the optimal economic result. Deciding how to allocate resources involves examining a range of criteria including value for money, risk of failure, as well as meeting ethical and equity expectations. SROI cannot provide guidance for any of this. 
 
@@ -49,7 +49,7 @@ Pseudo-economic analyses are not a substitute for or means of recovering from in
 
 Finally not every outcome needs to be monetised. Provided appropriate experimental methods have been used, it should be completely satisfactory to show that participants are content or happier than their control group peers. Appealing to a ‘better’ economic outcome risks missing the point completely.
 
-**WHAT SHOULD WE BE DOING INSTEAD?**
+## What should we be doing instead?
 
 Economists and social policy analysts have made great strides in deriving plausible monetary values for social outcomes in the last decade. Most economists reviewing spending decision are content to calculate measures like net present value (NPV), benefit cost ratio and an estimate of the probability that an instance of an NPV falls within a specified range. Ethical and equity considerations are the province of politicians, representing the public domain. 
 
@@ -65,7 +65,7 @@ Accurately calculating the benefits associated with a social intervention is som
 
 The cavalier assignment of monetary values to ‘personal experiences’ in an SROI analysis may help an NFP understand how its services can affect stakeholders, but even assuming they are accurate they have little relevance to costs that they may have saved the state, and by extension taxpayers.
 
-**WHY SHOULD PUBLIC SERVANTS AVOID IT?**
+## Why should public servants avoid it?
 
 Comparisons of SROI measures achieved by different programs and organisations are meaningless and should be avoided at the risk of seeming to be innumerate and ill-informed.
 

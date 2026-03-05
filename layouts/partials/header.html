@@ -1,0 +1,12 @@
+<div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <img height={{ .Site.Params.logo.desktop_height }} width={{ .Site.Params.logo.desktop_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+    </div>
+    <div class="logo-mobile">
+      <img height={{ .Site.Params.logo.mobile_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.mobile | relURL }}" />
+    </div>
+    {{ partial "main-menu.html" . }}
+    {{ partial "hamburger.html" . }}
+  </div>
+</div>

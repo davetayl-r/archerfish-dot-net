@@ -26,8 +26,8 @@ theme = "hugo-hero-theme"
     meta_og_description = "Archerfish is an economic advisory firm specialising in the economic impact of evidence-based interventions."
 
 [[menu.main]]
-  name   = "Analysis"
-  url    = "/analysis/"
+  name   = "Home"
+  url    = "/"
   weight = 1
 
 [[menu.main]]

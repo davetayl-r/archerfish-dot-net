@@ -128,7 +128,7 @@ body:not(.page-home) #wrapper {
 // ── Hero image ─────────────────────────────────────────────────────────────
 // Replace blue overlay with dark/black overlay
 .hero-image {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
 
   // Force the flex column to centre its children horizontally
@@ -187,15 +187,21 @@ body:not(.page-home) #wrapper {
 .bg-overlay {
   // darken bg-overlay strips (used on homepage sections)
   &::before {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 
 // ── Typography ─────────────────────────────────────────────────────────────
-h1, h2 {
+h1 {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   color: #111111;
   font-weight: 700;
+}
+
+h2 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  color: #111111;
+  font-weight: 800;
 }
 
 h3 {
@@ -310,6 +316,42 @@ a {
   }
 }
 
+// ── Insights single post ────────────────────────────────────────────────────
+.insights-post-header {
+  background: #111111;
+  padding: 6rem 0 4rem;
+
+  .insights-item-date {
+    color: $orange;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.insights-hero h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.8rem;
+  }
+}
+
+.insights-post {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
 // ── Content pages (Analysis, blog posts) ───────────────────────────────────
 .page-default-single,
 .content {
@@ -371,6 +413,72 @@ a {
   }
 }
 
+// ── Insights list ───────────────────────────────────────────────────────────
+.insights-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.insights-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.insights-item-meta {
+  margin-bottom: 0.5rem;
+}
+
+.insights-item-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.insights-item-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: #111111;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.insights-item-preview {
+  color: #555555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.insights-item-readmore {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $orange;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($orange, 10%);
+  }
+}
+
 // ── Blog list ───────────────────────────────────────────────────────────────
 // Post summary cards
 .summary h2 a,
@@ -403,11 +511,50 @@ a {
   }
 }
 
+// ── Insights page hero banner ─────────────────────────────────────────────────
+.insights-hero {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+
+  .container {
+    text-align: center;
+  }
+
+  .insights-hero-subtitle {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 4rem;
+    }
+  }
+}
+
 // ── Homepage interstitial banners ────────────────────────────────────────────
 .home-interstitial {
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   padding: 30rem 0;
 

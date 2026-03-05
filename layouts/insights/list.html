@@ -1,0 +1,29 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+<div class="insights-hero" style="background-image: url('{{ .Params.heroBackground | relURL }}');">
+  <div class="container">
+    <p class="insights-hero-subtitle">{{ .Title }}</p>
+    <h2>WE'VE BEEN THINKING</h2>
+  </div>
+</div>
+
+<div class="container insights-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="insights-item">
+    <div class="insights-item-meta">
+      <span class="insights-item-date">{{ .Date.Format "2 January 2006" }}</span>
+    </div>
+    <h2 class="insights-item-title">
+      <a href="{{ .RelPermalink }}" target="_blank" rel="noopener">{{ .Title }}</a>
+    </h2>
+    <p class="insights-item-preview">{{ .Summary }}</p>
+    <a class="insights-item-readmore" href="{{ .RelPermalink }}" target="_blank" rel="noopener">Read more &rarr;</a>
+  </article>
+  {{ end }}
+</div>
+
+{{ end }}
