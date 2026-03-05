@@ -195,20 +195,20 @@ body:not(.page-home) #wrapper {
 h1, h2 {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   color: #111111;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: $orange;   // orange accent instead of blue
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 h4 {
   font-family: 'Montserrat', sans-serif;
   color: #111111;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
