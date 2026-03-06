@@ -18,6 +18,8 @@ theme = "hugo-hero-theme"
     desktop_width  = "auto"
     alt            = "Archerfish"
 
+  google_analytics_id = "G-3W4B3P07C2"
+
   [params.homepage_meta_tags]
     meta_description = "Archerfish is an economic advisory firm that specialises in collecting and analysing data to determine the economic impact of evidence-based interventions in health, education, social welfare, criminal justice, social services and housing."
     meta_og_title    = "Archerfish"
